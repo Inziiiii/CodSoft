@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/teal_700"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:id="@+id/swtch"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:enabled="false"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:layout_centerInParent="true"
+        app:switchMinWidth="60dp"
+        android:layout_height="wrap_content">
+    </androidx.appcompat.widget.SwitchCompat>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/swtch"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="FLASHLIGHT"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/result"
+        android:layout_below="@+id/swtch"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="off"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+</RelativeLayout>
